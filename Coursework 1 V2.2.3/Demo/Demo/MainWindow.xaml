@@ -1,0 +1,31 @@
+﻿<Window x:Class="Demo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="427.446" Width="880.314">
+    <Grid x:Name="PreferredContactWarningLbl" Margin="0,0,0,-3">
+        <Label x:Name="TitleLbl" Content="Please enter the customers data" HorizontalAlignment="Left" Height="27" Margin="172,0,0,0" VerticalAlignment="Top" Width="181"/>
+        <Label x:Name="IDLbl" Content="ID:" HorizontalAlignment="Left" Height="27" Margin="96,32,0,0" VerticalAlignment="Top" Width="31"/>
+        <Label x:Name="FirstNameLbl" Content="First Name:" HorizontalAlignment="Left" Height="27" Margin="55,64,0,0" VerticalAlignment="Top" Width="72"/>
+        <Label x:Name="SurnameLbl" Content="Surname:" HorizontalAlignment="Left" Height="27" Margin="67,96,0,0" VerticalAlignment="Top" Width="60"/>
+        <Label x:Name="EmailAddressLbl" Content="Email Address:" HorizontalAlignment="Left" Height="27" Margin="39,128,0,0" VerticalAlignment="Top" Width="88"/>
+        <Label x:Name="SkypeIDLbl" Content="Skype ID:" HorizontalAlignment="Left" Height="27" Margin="67,160,0,0" VerticalAlignment="Top" Width="60"/>
+        <Label x:Name="TelephoneLbl" Content="Telephone:" HorizontalAlignment="Left" Height="27" Margin="58,192,0,0" VerticalAlignment="Top" Width="69"/>
+        <Label x:Name="PreferredContactLbl" Content="Preferred Contact:&#xD;&#xA;" HorizontalAlignment="Left" Height="26" Margin="16,224,0,0" VerticalAlignment="Top" Width="111"/>
+        <Button x:Name="DeleteCustomerBtn" Content="Delete Customer" HorizontalAlignment="Left" Height="29" Margin="159,293,0,0" VerticalAlignment="Top" Width="105" Click="DeleteCustomerBtn_Click"/>
+        <Button x:Name="FindCustomerBtn" Content="Find Customer" HorizontalAlignment="Left" Height="29" Margin="280,293,0,0" VerticalAlignment="Top" Width="111" Click="FindCustomerBtn_Click"/>
+        <Button x:Name="SaveCustomerBtn" HorizontalAlignment="Left" Height="29" Margin="409,293,0,0" VerticalAlignment="Top" Width="112" Click="SaveCustomerBtn_Click" Content="Save Customer"/>
+        <TextBox x:Name="IDTxt" HorizontalAlignment="Left" Height="27" Margin="150,32,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="261"/>
+        <TextBox x:Name="FirstNameTxt" HorizontalAlignment="Left" Height="27" Margin="150,64,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="261"/>
+        <TextBox x:Name="SurnameTxt" HorizontalAlignment="Left" Height="27" Margin="150,96,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="261"/>
+        <TextBox x:Name="EmailAddressTxt" HorizontalAlignment="Left" Height="27" Margin="150,128,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="261"/>
+        <TextBox x:Name="SkypeIDTxt" HorizontalAlignment="Left" Height="27" Margin="150,160,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="261"/>
+        <TextBox x:Name="TelephoneTxt" HorizontalAlignment="Left" Height="27" Margin="150,192,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="261"/>
+        <TextBox x:Name="PreferredContactTxt" HorizontalAlignment="Left" Height="26" Margin="150,224,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="261"/>
+        <Button x:Name="GetPreferredContactBtn" Content="Get Preferred Contact" HorizontalAlignment="Left" Height="29" Margin="10,293,0,0" VerticalAlignment="Top" Width="132" Click="GetPreferredContactBtn_Click"/>
+        <Label x:Name="PreferredContactWarningLbl1" Content="Please enter either, Email, Skype or Telephone" HorizontalAlignment="Left" Height="29" Margin="150,255,0,0" VerticalAlignment="Top" Width="261"/>
+        <Button x:Name="ClearFormBtn" Content="Clear Form" HorizontalAlignment="Left" Height="30" Margin="159,338,0,0" VerticalAlignment="Top" Width="105" Click="ClearFormBtn_Click"/>
+        <Label x:Name="PreviousCustomersLbl" Content="Previous Customers" HorizontalAlignment="Left" Height="27" Margin="642,0,0,0" VerticalAlignment="Top" Width="118"/>
+        <ListBox x:Name="PreviousCustomersList" HorizontalAlignment="Left" Height="209" Margin="586,41,0,0" VerticalAlignment="Top" Width="247"/>
+        <Button x:Name="ListAllBtn" Content="List All" HorizontalAlignment="Left" Height="30" Margin="280,338,0,0" VerticalAlignment="Top" Width="111" Click="ListAllBtn_Click"/>
+    </Grid>
+</Window>
